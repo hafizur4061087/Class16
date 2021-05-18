@@ -1,0 +1,34 @@
+*{
+    margin: auto;
+    padding: 0;
+}
+.hoverdiv{
+    height: 300px;
+    width: 300px;
+    position: relative;
+}
+.hoverdiv img{
+    max-width: 100%;
+}
+.hoverinner{
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: rgb(25, 44, 212);
+    width: 0;
+    height: 0;
+    text-align: center;
+    background-color: rgba(175, 238, 233, .4);
+    visibility: hidden;
+    transition: .5s;
+}
+.hoverinner h4{
+    font-size: 22px;
+    padding-top: 312px;
+}
+.hoverdiv:hover .hoverinner{
+    height: 100%;
+    width: 100%;
+    visibility: visible;
+   
+}
